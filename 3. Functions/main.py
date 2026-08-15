@@ -34,3 +34,6 @@ def greet(name):
 print(greet("Sumit")) 
 print(greet("Tanu")) 
 print(greet("Abs")) 
+
+L = [1,3,2]
+print(sorted(L))
