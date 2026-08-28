@@ -39,10 +39,22 @@
 # finally:
 #         print("This runs no mater what")    
 
-a = 1
+# a = 1
+# try:
+#     b = int(input("Please enter a number to divide a: "))
+#     a = a / b
+#     print("Success a =", a)
+# except:
+#     print("There was an error")
+
+
 try:
-    b = int(input("Please enter a number to divide a: "))
-    a = a / b
-    print("Success a =", a)
-except:
-    print("There was an error")
+    # Attempting to divide by 10
+    result = 10/0
+except ZeroDivisionError:
+    # Handling and printing zwro error msg
+    print("Eroor cant divide")
+# This line will be executed regarledd of expection
+print("outside of try and except")
+
+

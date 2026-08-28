@@ -25,3 +25,7 @@ d = {"a":1, "b":2}
 d["c"] = 3
 print(len(d))
 print(d)
+
+original = "hello world"
+neworoginal = original.replace("hello", "hola")
+print(neworoginal)
