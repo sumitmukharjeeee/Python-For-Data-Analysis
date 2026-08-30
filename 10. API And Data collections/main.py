@@ -12,4 +12,7 @@ print(df.mean())
 
 # Rest API
 
-REpresentational State Transfer APIs
+# REpresentational State Transfer APIs
+# apis are used to intereact with webserives
+# input then wen websiervies gives data our outpurs
+# http message
