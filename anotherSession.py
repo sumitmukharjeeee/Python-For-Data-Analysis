@@ -53,3 +53,7 @@ print(type(names))
 # # Your code here
 # first_thirty_loc = df.loc[df.index[:30],['Age','Math Grade']]
 # # your code here
+
+# even numbered rows assingment on two variables
+
+# even_numbered_rows = df.loc[0:2,['Name','Emglish_grade']]
