@@ -1,41 +1,50 @@
+# # import requests
+
+# # url = 'https://www.ibm.com/'
+# # r = requests.get(url)
+
+# # print(r)
+# # print(r.status_code)
+# # print(r.headers)
+# # print(r.request.body)
+# # print(r.encoding)
+
 # import requests
+# from bs4 import BeautifulSoup
+# url = 'https://www.facebook.com/'
 
-# url = 'https://www.ibm.com/'
-# r = requests.get(url)
+# # Sending https requests
 
-# print(r)
-# print(r.status_code)
-# print(r.headers)
-# print(r.request.body)
-# print(r.encoding)
+# response = requests.get(url)
 
-import requests
-from bs4 import BeautifulSoup
-url = 'https://www.facebook.com/'
+# # storing the html content in a variable
 
-# Sending https requests
+# html_content = response.text
 
-response = requests.get(url)
+# #  to parse using beautiful soap
 
-# storing the html content in a variable
+# soup = BeautifulSoup(html_content,'html.parser')
 
-html_content = response.text
+# # display content
 
-#  to parse using beautiful soap
+# # print(soup.prettify())
 
-soup = BeautifulSoup(html_content,'html.parser')
+# # display a snippet
 
-# display content
+# print(html_content[:500])
 
-# print(soup.prettify())
+# # finding all the a tags
 
-# display a snippet
+# links = soup.find_all('a')
 
-print(html_content[:500])
+# for link in links:
+#     print(link.text)
 
-# finding all the a tags
+# scrapy is an open source web crawling framework for python
+# it is used to extract the data fromm website
 
-links = soup.find_all('a')
+# selenium is tool used for controlling web browser through programs and automating browser taks
 
-for link in links:
-    print(link.text)
+# from selenium import webdriver
+# driver = webdriver.firefox()
+# driver.get("https://www.facebook.com/")
